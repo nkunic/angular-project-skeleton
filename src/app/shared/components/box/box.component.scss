@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.bonus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: {
+    style: solid;
+    width: 1px;
+  }
+  &:not(.bonus--active) {
+    border-color: lightgray;
+    background-color: lightgray;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+}
+
+.bonus--active {
+  border-color: gold;
+  background-color: gold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
